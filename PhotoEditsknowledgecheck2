@@ -1,0 +1,36 @@
+Using System;
+Using system static;
+
+namespace PhotoOrganization
+
+Internal class program
+{
+Public class Image
+{
+
+Public string model { get; set }
+Public string location { get; set }
+Public string type { get; set }
+Public string yearphotographed { get; set }
+
+
+Console.WriteLine("How many photos do you want to add? ");
+var numberOfRecords = int.Parse(Console.ReadLine());
+
+var recordList = new List<PhotoEdits>();
+for (int i = 0; i < numberOfRecords; i++)
+{
+	// In this loop, populate the object's properties using Console.ReadLine()
+	var myClass = new PhotoEdits();
+
+	Console.WriteLine("Enter the value for ");
+	myClass. = Console.ReadLine();
+    
+
+	recordList.Add(PhotoEdits);
+}
+}
+}
+
+// Print out the list of records using Console.WriteLine()
+
