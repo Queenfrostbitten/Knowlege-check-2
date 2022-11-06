@@ -1,36 +1,49 @@
-Using System;
-Using system static;
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
+
 
 namespace PhotoOrganization
-
-Internal class program
-{
-Public class Image
-{
-
-Public string model { get; set }
-Public string location { get; set }
-Public string type { get; set }
-Public string yearphotographed { get; set }
+{ 
 
 
-Console.WriteLine("How many photos do you want to add? ");
-var numberOfRecords = int.Parse(Console.ReadLine());
-
-var recordList = new List<PhotoEdits>();
-for (int i = 0; i < numberOfRecords; i++)
-{
-	// In this loop, populate the object's properties using Console.ReadLine()
-	var myClass = new PhotoEdits();
-
-	Console.WriteLine("Enter the value for ");
-	myClass. = Console.ReadLine();
+	public class Image
     
 
-	recordList.Add(PhotoEdits);
-}
-}
-}
+	{
+
+		public String Type { get; set; }
+		public String Location { get; set; }
+		public String Model { get; set; }
+		public String Yearphotographed { get; set; }
+
+
+		Console.WriteLine( "How many photos do you want to add? " );
+var numberOfImages = int.Parse(Console.ReadLine());
+
+		var ImageList = new List<PhotoImages>();
+for (int i = 0; i<numberOfImages; i++)
+{
+	// In this loop, populate the object's properties using Console.ReadLine()
+	var Image = new PhotoImages();
+		var entry = Image.entry();
+		
+	Image = Console.ReadLine();
+    
+
+	ImageList.Add(PhotoImages);
+
+ ImageList.Add( new Image() { Type = entry.Type, Location = entry.Location, Model = entry.Model, Yearphotographed = entry.Yearphotographed };
+
 
 // Print out the list of records using Console.WriteLine()
+foreach(var entry in ImageList)
 
+        Console.WriteLine( "Type:" +  entry.Type);
+		Console.WriteLine( "Location" + entry.Location );
+		Console.WriteLine( "Model" + entry.Modelname );
+		Console.WriteLine( "Yearphotographed" + entry.Yearphotographed);
+}
+}
